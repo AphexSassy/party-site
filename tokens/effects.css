@@ -1,0 +1,34 @@
+:root{
+--shadow-none:none;
+--shadow-hard-ink:5px 5px 0 var(--ink);
+--shadow-hard-blood:5px 5px 0 var(--blood-600);
+--shadow-bevel-out:inset -1px -1px 0 var(--win-dark),inset 1px 1px 0 var(--win-light),inset -2px -2px 0 var(--win-shadow),inset 2px 2px 0 var(--win-face);
+--shadow-bevel-in:inset 1px 1px 0 var(--win-dark),inset -1px -1px 0 var(--win-light),inset 2px 2px 0 var(--win-shadow),inset -2px -2px 0 var(--win-face);
+--shadow-glow-blood:0 0 0 1px var(--blood-600),0 0 22px rgba(196,30,42,.55);
+--shadow-object:0 30px 40px -24px rgba(0,0,0,.45);
+
+--pattern-scanline:repeating-linear-gradient(0deg,rgba(0,0,0,.2) 0 1px,transparent 1px 3px);/* @kind other */
+--pattern-grille:repeating-linear-gradient(0deg,#1a1a1a 0 2px,#3a3a3a 2px 4px);/* @kind other */
+--pattern-dash-h:repeating-linear-gradient(90deg,currentColor 0 4px,transparent 4px 7px);/* @kind other */
+--filter-mono:grayscale(1) contrast(1.15);/* @kind other */
+--filter-duotone-red:grayscale(1) contrast(1.3) sepia(1) saturate(6) hue-rotate(-38deg);/* @kind other */
+--filter-flash:saturate(1.2) contrast(1.08);/* @kind other */
+
+--ease-snap:cubic-bezier(.2,1.6,.4,1);/* @kind other */--ease-glitch:steps(3,end);/* @kind other */--ease-out:cubic-bezier(.16,1,.3,1);/* @kind other */--ease-in:cubic-bezier(.7,0,.84,0);/* @kind other */
+--dur-fast:90ms;/* @kind other */--dur-base:180ms;/* @kind other */--dur-slow:420ms;/* @kind other */--dur-explode:1100ms;/* @kind other */
+}
+@keyframes y2k-glitch{0%{transform:translate(0)}33%{transform:translate(-3px,1px)}66%{transform:translate(3px,-1px)}100%{transform:translate(0)}}
+@keyframes y2k-blink{50%{opacity:0}}
+@keyframes y2k-shard-in{0%{transform:scale(0) rotate(-35deg);opacity:0}60%{opacity:1}100%{transform:none;opacity:1}}
+@keyframes y2k-drift{0%{transform:rotate(-1.2deg) scale(1)}100%{transform:rotate(1.6deg) scale(1.04)}}
+@keyframes y2k-flicker{0%,100%{opacity:1}41%{opacity:1}42%{opacity:.1}43%{opacity:1}77%{opacity:.4}78%{opacity:1}}
+@keyframes y2k-slice-a{0%,82%,100%{clip-path:inset(0 0 100% 0);transform:none}83%{clip-path:inset(12% 0 64% 0);transform:translate(-8px,0)}86%{clip-path:inset(58% 0 20% 0);transform:translate(10px,0)}89%{clip-path:inset(30% 0 48% 0);transform:translate(-4px,0)}92%{clip-path:inset(80% 0 4% 0);transform:translate(6px,0)}95%{clip-path:inset(0 0 100% 0)}}
+@keyframes y2k-slice-b{0%,84%,100%{clip-path:inset(0 0 100% 0);transform:none}85%{clip-path:inset(40% 0 38% 0);transform:translate(9px,2px)}88%{clip-path:inset(6% 0 80% 0);transform:translate(-11px,0)}91%{clip-path:inset(66% 0 10% 0);transform:translate(5px,-1px)}94%{clip-path:inset(0 0 100% 0)}}
+@keyframes y2k-shake{0%,86%,100%{transform:none}87%{transform:translate(-2px,1px) skewX(-4deg)}90%{transform:translate(3px,-1px) skewX(6deg)}93%{transform:none}}
+@keyframes y2k-tv-off{0%{transform:none;filter:none}55%{transform:scale(1,.006);filter:brightness(4)}100%{transform:scale(0,.006);filter:brightness(6)}}
+@keyframes y2k-tv-on{0%{transform:scale(0,.006);filter:brightness(6)}45%{transform:scale(1,.006);filter:brightness(4)}100%{transform:none;filter:none}}
+@keyframes y2k-strobe{0%,20%,40%{opacity:1}10%,30%,50%,100%{opacity:0}}
+@keyframes y2k-spin{to{transform:rotate(360deg)}}
+@keyframes y2k-jolt{0%{transform:translateY(0)}30%{transform:translateY(-8px)}60%{transform:translateY(2px)}100%{transform:translateY(0)}}
+@keyframes y2k-roll{from{transform:translateY(-120%)}to{transform:translateY(520%)}}
+@keyframes y2k-led{0%,60%{opacity:1}61%,100%{opacity:.25}}

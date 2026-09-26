@@ -1,0 +1,3 @@
+function SiteFooter(){return <footer style={{background:'var(--paper)',color:'var(--ink)',padding:'24px var(--gutter-page)',display:'flex',justifyContent:'space-between',gap:20,flexWrap:'wrap',font:'var(--text-micro)',letterSpacing:'var(--tr-micro)',borderTop:'1px dashed var(--ink)'}}>
+<span>COPYRIGHT © 2000 YOUR PARTY. ALL RIGHTS RESERVED.</span><span>SEND US AN E-MAIL: <b style={{color:'var(--blood-600)'}}>DOOR@YOURPARTY.NET</b></span><span style={{color:'var(--smoke-500)'}}>[ BEST VIEWED AT 1024×768 ]</span></footer>;}
+window.SiteFooter=SiteFooter;

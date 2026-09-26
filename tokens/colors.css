@@ -1,0 +1,27 @@
+:root{
+/* PAPER — white page, the default ground */
+--paper:#ffffff;--bone-100:#f4f2ef;--bone-200:#e4e4e4;--bone-300:#d6d6d6;
+/* EMBER — exploding vector shards */
+--salmon-300:#eab09c;--salmon-400:#e08a70;--ember-500:#d04a22;--orange-500:#ff6600;--blood-600:#c41e2a;--rust-700:#a8313a;
+/* CRIMSON NIGHT */
+--oxblood-600:#6e1230;--oxblood-800:#3d0a1c;--crimson-900:#1c0612;--crimson-950:#0e030a;
+/* NEUTRALS */
+--smoke-300:#b9b3ae;--smoke-500:#7d7169;--grey-800:#333333;--asphalt:#17130f;--ink:#0a0708;
+/* WIN2000 CHROME — classic OS buttons + windows */
+--win-face:#d4d0c8;--win-light:#ffffff;--win-shadow:#808080;--win-dark:#404040;
+
+/* SEMANTIC */
+--bg-page:var(--paper);--bg-muted:var(--bone-200);--bg-dark:var(--crimson-950);--bg-block:var(--orange-500);
+--surface-card:var(--paper);--surface-dark:var(--ink);
+--fg-1:var(--ink);--fg-2:#3a3a3a;--fg-muted:var(--smoke-500);--fg-on-dark:var(--bone-100);--fg-on-dark-muted:var(--smoke-300);
+--accent-primary:var(--blood-600);--accent-secondary:var(--ember-500);--accent-block:var(--orange-500);
+--line-hair:rgba(10,7,8,.4);--line-ember:rgba(196,30,42,.7);--line-on-dark:rgba(244,242,239,.35);
+--state-success:#2e9e4f;--state-warning:var(--orange-500);--state-danger:var(--blood-600);--state-info:var(--grey-800);
+--focus-ring:var(--orange-500);
+
+/* GRADIENTS — surfaces only */
+--grad-crimson-flare:radial-gradient(ellipse at 38% 30%,rgba(255,250,248,.95) 0%,rgba(224,138,112,.6) 12%,rgba(196,30,42,.5) 30%,rgba(61,10,28,.5) 50%,rgba(14,3,10,0) 72%);/* @kind color */
+--grad-floor:linear-gradient(180deg,var(--paper) 0%,var(--paper) 55%,#dcdedf 56%,#eef0f0 72%,var(--paper) 100%);/* @kind color */
+--grad-win-title:linear-gradient(90deg,var(--oxblood-800) 0%,var(--blood-600) 55%,var(--ember-500) 100%);/* @kind color */
+--grad-smoke:radial-gradient(ellipse at 50% 60%,rgba(240,179,90,.5) 0%,rgba(122,15,36,.25) 40%,rgba(10,7,8,0) 72%);/* @kind color */
+}

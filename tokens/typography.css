@@ -1,0 +1,28 @@
+:root{
+--font-display:'Archivo',Helvetica,Arial,sans-serif;       /* heavy tight grotesk; italic + wdth 62 for "typo dESIGN" */
+--font-impact:'Anton','Impact',sans-serif;                   /* compressed caps + giant index numbers */
+--font-tall:'Six Caps','Anton',sans-serif;                   /* ultra-tall caps, tracked wide */
+--font-geo:'Jost','Futura',sans-serif;                       /* lowercase geometric labels — bauhaus nav, TV wordmark */
+--font-script:'Pinyon Script',cursive;                       /* giant calligraphic swash letters, red, used as ornament */
+--font-web:Verdana,Tahoma,sans-serif;                 /* 2000-web body copy + news columns */
+--font-os:Tahoma,Verdana,sans-serif;                         /* Win2000 buttons, fields, window titles */
+--font-mono:'JetBrains Mono',ui-monospace,monospace;         /* times, sizes, file names */
+--font-condensed:var(--font-impact);
+
+--fs-mega:clamp(80px,14vw,220px);/* @kind font */--fs-display:96px;/* @kind font */--fs-h1:56px;/* @kind font */--fs-h2:36px;/* @kind font */--fs-h3:22px;/* @kind font */--fs-body:12px;/* @kind font */--fs-small:11px;/* @kind font */--fs-micro:9px;/* @kind font */
+--lh-tight:.82;/* @kind font */--lh-snug:1;/* @kind font */--lh-body:1.5;/* @kind font */
+--tr-mega:-.07em;/* @kind font */--tr-display:-.05em;/* @kind font */--tr-caps:.01em;/* @kind font */--tr-micro:.06em;/* @kind font */--tr-tall:.42em;/* @kind font */
+
+--text-mega:900 var(--fs-mega)/var(--lh-tight) var(--font-display);/* @kind font */
+--text-display:900 var(--fs-display)/var(--lh-tight) var(--font-display);/* @kind font */
+--text-slant:italic 900 72px/.8 var(--font-display);/* @kind font */
+--text-h1:400 var(--fs-h1)/var(--lh-snug) var(--font-impact);/* @kind font */
+--text-h2:400 var(--fs-h2)/var(--lh-snug) var(--font-impact);/* @kind font */
+--text-h3:400 var(--fs-h3)/var(--lh-snug) var(--font-impact);/* @kind font */
+--text-tall:400 64px/1 var(--font-tall);/* @kind font */
+--text-geo:600 13px/1 var(--font-geo);/* @kind font */
+--text-body:400 var(--fs-body)/var(--lh-body) var(--font-web);/* @kind font */
+--text-os:400 11px/1 var(--font-os);/* @kind font */
+--text-label:800 var(--fs-small)/1.1 var(--font-display);/* @kind font */
+--text-micro:800 var(--fs-micro)/1.2 var(--font-display);/* @kind font */
+}

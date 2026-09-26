@@ -1,0 +1,13 @@
+<!-- @dsCard group="Party Site" viewport="1280x800" name="Party website" subtitle="Home, lineup, gallery, RSVP click-through" -->
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Party Site — UI kit</title><link rel="stylesheet" href="../../styles.css">
+<style>body{margin:0;background:var(--ink)}a{color:var(--blood-600)}a:hover{color:var(--ember-500)}</style>
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="../../_ds_bundle.js"></script></head><body><div id="root"></div>
+<script type="text/babel" src="FX.jsx"></script><script type="text/babel" src="Header.jsx"></script><script type="text/babel" src="Footer.jsx"></script><script type="text/babel" src="Home.jsx"></script><script type="text/babel" src="Lineup.jsx"></script><script type="text/babel" src="Gallery.jsx"></script><script type="text/babel" src="Rsvp.jsx"></script>
+<script type="text/babel">function App(){const [p,setP]=React.useState(localStorage.getItem('y2k-page')||'home');const [ph,setPh]=React.useState('on');
+const go=k=>{if(k===p)return;setPh('off');setTimeout(()=>{setP(k);localStorage.setItem('y2k-page',k);window.scrollTo(0,0);setPh('on');},300);};
+const S={home:HomeScreen,lineup:LineupScreen,gallery:GalleryScreen,rsvp:RsvpScreen}[p]||HomeScreen;
+return <div data-screen-label={p}><SiteHeader page={p} go={go}/><div key={p+ph} style={{transformOrigin:'50% 30vh',animation:ph==='off'?'y2k-tv-off 300ms var(--ease-in) forwards':'y2k-tv-on 460ms var(--ease-out) both'}}><S go={go}/><SiteFooter/></div><Crosshair/></div>;}
+ReactDOM.createRoot(document.getElementById('root')).render(<App/>);</script></body></html>
