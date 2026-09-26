@@ -1,0 +1,15 @@
+<!-- @dsCard group="Components" viewport="700x230" name="Actions" -->
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../../styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="../../_ds_bundle.js"></script>
+<style>body{margin:0;background:var(--paper);min-height:100vh;overflow:hidden}</style></head><body><div id="root"></div>
+<script type="text/babel">const NS=window.Y2KPartyDesignSystem_2620e7;
+const {Button,IconButton}=NS;
+function App(){return <div style={{display:"grid",gridTemplateRows:"1fr 1fr 1fr",height:"100vh"}}>
+<div style={{padding:"0 24px",...{display:"flex",gap:18,alignItems:"center",flexWrap:"wrap"}}}><Button index={1} arrow>Get on the list</Button><Button variant="secondary">Lineup</Button><Button variant="orange">Gallery</Button><Button disabled>Sold out</Button></div>
+<div style={{padding:"0 24px",background:"var(--crimson-950)",...{display:"flex",gap:18,alignItems:"center",flexWrap:"wrap"}}}><Button variant="flash" arrow>Get in</Button><Button size="sm">Small</Button><IconButton label="Next" glyph="↘" tone="white"/><IconButton label="Add" glyph="＋"/></div>
+<div style={{padding:"0 24px",...{display:"flex",gap:18,alignItems:"center",flexWrap:"wrap"},gap:8}}><span style={{font:"var(--text-os)"}}>your e-mail :</span><Button variant="classic">join</Button><Button variant="classic">drop</Button><Button variant="classic" disabled>cancel</Button><IconButton label="Close" glyph="✕" tone="ink"/></div>
+</div>}
+ReactDOM.createRoot(document.getElementById('root')).render(<App/>);</script></body></html>
